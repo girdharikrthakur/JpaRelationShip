@@ -24,11 +24,8 @@ public class UserController {
 
     @PostMapping()
     public ResponseEntity<APIResponse<User>> addUser(@RequestBody User user) {
-
         User addedUser = userService.addUser(user);
-
         APIResponse<User> response = new APIResponse<>(addedUser.getUserid(), user);
-
         return ResponseEntity.ok(response);
 
     }
@@ -36,9 +33,7 @@ public class UserController {
     @GetMapping()
     public ResponseEntity<APIResponse<List<User>>> getAllUser() {
         List<User> user = userService.getAllUser();
-
         APIResponse<List<User>> response = new APIResponse<>(user.size(), user);
-
         return ResponseEntity.ok(response);
     }
 

@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.girdhari</groupId>
-	<artifactId>association</artifactId>
+	<artifactId>EcomApplication</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>association</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Ecom project for Spring Boot</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -68,7 +68,15 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
 	</dependencies>
+
+
+	
 
 	<build>
 		<plugins>
